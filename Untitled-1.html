@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--link necessario-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--link necessario-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!--link necessario-->
+    <link rel="icon" href="imgs/logo.jpg">
+    <title>Florido Doce</title>
+    <link rel="icon" href="imgs/logo-icon.png">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header">
+            <a href="Untitled-1.html" class="logo-link">
+                <img src="imgs/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <!-- <a href="titulo_secao">Produtos</a> -->
+                <a href="javascript:void(0);" onclick="scrollToSection('subtitulo1')">Produtos</a>
+                <a href="javascript:void(0);" onclick="scrollToSection('NosEncontre')">Locais</a>
+                <!-- <a href="locais.html">Locais</a>
+                <a href="sobre.html">Sobre</a> -->
+                <a href="https://wa.me/5544997302139" class="whatsapp-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>WhatsApp 
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="background">
+            <div class="limite_pagina">
+
+                <div class="quemSomos">
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div id="pr" class="swiper-slide"><img src="./imgs/ovos modelo 1.webp"
+                                    alt="Apresentação dos produtos: ovos de páscoa"></div>
+                            <div id="se" class="swiper-slide"><img src="./imgs/natal.webp"
+                                    alt="Apresentação dos produtos: doce para natal"></div>
+                            <div id="te" class="swiper-slide"><img src="./imgs/dia dos namorados.jpg"
+                                    alt="Apresentação dos produtos: doce dos dias dos namorados"></div>
+                            <div id="qu" class="swiper-slide"><img src="./imgs/dia das maes.jpg"
+                                    alt="Apresentação dos produtos: doce dos dias da mães"></div>
+                            <div id="qui" class="swiper-slide"><img src="./imgs/trufa maracuja.webp"
+                                    alt="Apresentação dos produtos: trufa de maracujá"></div>
+                            <div id="sex" class="swiper-slide"><img src="./imgs/ovos modelo 2.jpg"
+                                    alt="Apresentação dos produtos: ovos de páscoa"></div>
+                            <div id="set" class="swiper-slide"><img src="./imgs/natal 2.jpg"
+                                    alt="Apresentação dos produtos: doce para natal"></div>
+
+                            <div class="button-next" onclick="showNextImage()"><i class="fas fa-chevron-right"></i></div>
+                            <div class="button-prev" onclick="showPrevImage()"><i class="fas fa-chevron-left"></i></div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="texto">
+                        <h2>Quem somos?</h2>
+                        <div>
+                            <p>Bem-vindos ao mundo do sabor artesanal e da doçura feita com amor e delicadeza!</p> <br>
+                            <p>A Florido doces é uma nova empresa de doces. Somos Eduarda e Izabela, irmãs e também confeiteiras
+                                e estamos encantadas em apresentar para vocês um pouco do nosso trabalho. Com uma paixão
+                                compartilhada por criar experiências memoráveis, nós nos dedicamos a produzir trufas e doces
+                                artesanais que conquistam paladares e os corações de nossos clientes. <br> <br> Cada doce é uma
+                                obra-prima, cuidadosamente elaborada com os melhores ingredientes, escolhidos a dedo e
+                                preparados com um toque especial que só nós duas sabemos dar.
+                                Junte-se a nós nessa jornada e descubra o verdadeiro sabor da felicidade!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="limite_pagina">
+            <h3 class="titulo_secao">Produtos</h3>
+            <div class="sublinhado"></div>
+
+            <h4 class="subtitulo1">Clássicos</h4>
+            <div class="coluna coluna-4">
+                <div class="produtos">
+                    <img src="imgs/tabela1.png" alt="Tabela de preços">
+                    <p>Encomendas para Festas</p>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/brigadeiro.avif" alt="Brigadeiro">
+                    <p>Brigadeiro caixa com 4 unidades</p>
+                    <span>R$ 12,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/beijinho.jpg" alt="Beijinho">
+                    <p>Beijinho caixa com 4 unidades</p>
+                    <span>R$ 12,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/Ninho.jpg" alt="Doce de Leite Ninho">
+                    <p>Ninho caixa com 4 unidades</p>
+                    <span>R$ 15,00</span>
+                </div>
+            </div>
+
+            <h4 class="subtitulo">Páscoa</h4>
+            <div class="coluna coluna-4">
+                <div class="produtos">
+                    <img src="imgs/pascoa_maracuja1.png" alt="Ovo de Páscoa de Colher Sabor Maracujá">
+                    <p>Ovo de Páscoa de Colher Sabor Maracujá</p>
+                    <span>R$ 60,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/pascoa_branco1.png" alt="Ovo de Páscoa de Colher Sabor Chocolate Branco">
+                    <p>Ovo de Páscoa de Colher Sabor Chocolate Branco</p>
+                    <span>R$ 60,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/pascoa_brigadeiro.jpg" alt="Ovo de Páscoa de Colher Sabor Brigadeiro">
+                    <p>Ovo de Páscoa de Colher Sabor Brigadeiro</p>
+                    <span>R$ 60,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/pascoa_biscoito1.png" alt="Ovo de Páscoa de Colher Sabor Biscoito">
+                    <p>Ovo de Páscoa de Colher Sabor Biscoito</p>
+                    <span>R$ 60,00</span>
+                </div>
+            </div>
+
+            <h4 class="subtitulo">Dia dos Namorados</h4>
+            <div class="coluna coluna-4">
+                <div class="produtos">
+                    <img src="imgs/apresentacao.jpg" alt="Caixas de Bombons">
+                    <p>Caixas de Bombons</p>
+                    <span>R$ 20,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/dia dos namorados.jpg" alt="Coração de chocolate">
+                    <p>Coração de chocolate</p>
+                    <span>R$ 25,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/namorados4.jpg" alt="Caixa Te Amo misto">
+                    <p>Caixa Te Amo misto</p>
+                    <span>R$ 30,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/namorados3.jpg" alt="Caixa Te Amo">
+                    <p>Caixa Te Amo</p>
+                    <span>R$ 30,00</span>
+                </div>
+            </div>
+
+            <h4 class="subtitulo">Natal</h4>
+            <div class="coluna coluna-4">
+                <div class="produtos">
+                    <img src="imgs/natal_teste1.png" alt="Barra de Chocolate">
+                    <p>Barra de Chocolate sabores diversos</p>
+                    <span>R$ 20,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/natal_teste3.png" alt="Caixa Natalina">
+                    <p>Caixa Natalina</p>
+                    <span>R$ 25,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/natal4.jpg" alt="Combo Natalino">
+                    <p>Combo Natalino</p>
+                    <span>R$ 40,00</span>
+                </div>
+                <div class="produtos">
+                    <img src="imgs/natal3.jpg" alt="Biscoito Natalino">
+                    <p>Biscoito Natalino</p>
+                    <span>R$ 5,00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="background">
+            <div class="limite_pagina">
+
+                <div class="locais"></div>
+
+                <div class="NosEncontre">
+
+                    <div class="NosEncontreTexto">
+                        <h2>
+                            <p>Nos encontre!!</p>
+                        </h2>
+
+                        <div>
+                            <p>Nós somos a Florido Doces, uma empresa de doces criada por duas irmãs apaixonadas pela confeitaria: Eduarda e Izabela.</p> <br> 
+                            <p>Com corações cheios de amor e mãos habilidosas, dedicamos nosso tempo e talento para transformar ingredientes de alta qualidade em doces irresistíveis que proporcionam verdadeiras experiências de prazer.</p>
+
+                        </div>
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+                
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('quemSomos')">Inicio</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('subtitulo1')">Produtos</a></li>
+                        <li><a href="javascript:void(0);" onclick="scrollToSection('NosEncontre')">Locais</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Informações</h6>
+                    <ul class="footer-links">
+                        <li><i class="fab fa-whatsapp"></i> (44) 99730-2139 Izabela</li>
+                        <li><i class="fab fa-whatsapp"></i> (44) 99708-1104 Eduarda</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Florido - Todos direitos reservados 2024 &copy; </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/FloridoDoces"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/florido_doces/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="Home.js"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+
+
+
+
+</html>
